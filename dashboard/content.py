@@ -3,7 +3,7 @@
 import dash_bootstrap_components as dbc
 from dash import dcc, html
 from dashboard.index import app
-from dashboard.layout.callbacks import documents, annotate
+from dashboard.layout.callbacks import routing, documents, annotate, mapping
 
 navbar = dbc.NavbarSimple(
     brand="Bellingcat Demo APP",
@@ -46,7 +46,8 @@ sidebar = html.Div(
             [
                 dbc.NavLink("1-Intro", href="/1-intro", id="page-1-link"),
                 dbc.NavLink("2-Training", href="/2-training", id="page-2-link"),
-                dbc.NavLink("3-Documents", href="/3-documents", id="page-3-link"),
+                dbc.NavLink("3-Mapping", href="/3-mapping", id="page-3-link"),
+                dbc.NavLink("4-Documents", href="/4-documents", id="page-4-link"),
             ],
             vertical=True,
             pills=True,

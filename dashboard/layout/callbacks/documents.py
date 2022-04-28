@@ -4,26 +4,6 @@ from dash import dcc, html
 import datetime
 
 from dashboard.index import app
-from dashboard.layout.documents import tab_documents
-from dashboard.layout.annotate import tab_annotate
-
-@app.callback(Output("page-content", "children"), [Input("url", "pathname")])
-def render_page_content(pathname):
-    if pathname in ["/", "/1-intro"]:
-        return html.P("This is the content of page 1!")
-    elif pathname == "/2-training":
-        return tab_annotate
-    elif pathname == "/3-documents":
-        return tab_documents
-    # If the user tries to reach a different page, return a 404 message
-    return dbc.Jumbotron(
-        [
-            html.H1("404: Not found", className="text-danger"),
-            html.Hr(),
-            html.P(f"The pathname {pathname} was not recognised..."),
-        ]
-    )
-
 
 # documents section
 @app.callback(Output('output-image-upload', 'children'),
