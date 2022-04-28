@@ -1,6 +1,9 @@
 tester.py
 annotate.py
 images/
+func.py
+*.csv
+osm.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
