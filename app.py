@@ -1,5 +1,4 @@
 """
-Structure influence by: https://www.purfe.com/dash-project-structure-multi-tab-app-with-callbacks-in-different-files/
 author: Ben E
 date: 2022-04-22
 """
