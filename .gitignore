@@ -1,9 +1,10 @@
-tester.py
-annotate.py
+misc/tester.py
+misc/annotate.py
 images/
-func.py
+misc/func.py
 *.csv
-osm.py
+misc/osm.py
+hist
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
