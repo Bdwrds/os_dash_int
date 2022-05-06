@@ -168,12 +168,12 @@ tab_upload_documents = \
          dbc.CardBody(
              [
                  html.Div(children=[
-                    html.H6('1. Upload a new image'),
+                    html.H6('1. Upload a new image ->'),
                     html.H6('2. Identify 2-3 features in the image from dropdown key-value list'),
-                    html.H6('3. Restrict Mapping to relevant coordinates'),
+                    html.H6('3. Restrict the map to the most relevant coordinates'),
                     html.H6('4. Query OSM for Features within area'),
                     html.H6('5. Set the "Max Distance (Km)" between all features'),
-                    html.H6('6. Click "Add Features to Map" to populate the map'),
+                    html.H6('6. Click "Add Features to Map" to populate the map with possible feature combinations'),
                     ],
                     style={'padding': 10, 'flex': 1})
                  ])
