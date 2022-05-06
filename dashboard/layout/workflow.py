@@ -4,7 +4,6 @@ from dash.dependencies import Input, Output, State
 import plotly.express as px
 import time
 from skimage import io
-from app import app
 import dash_leaflet as dl
 import pandas as pd
 
@@ -35,7 +34,6 @@ filelist = [
     "images/town.jpg"
 ]
 
-server = app.server
 
 fig = px.imshow(io.imread(filelist[0]), binary_backend="jpg")
 
