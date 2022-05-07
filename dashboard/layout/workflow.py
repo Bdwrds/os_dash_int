@@ -8,43 +8,20 @@ from app import app
 import dash_leaflet as dl
 import pandas as pd
 
-DEBUG = True
-
-NUM_ATYPES = 15
-DEFAULT_FIG_MODE = "layout"
 annotation_colormap = px.colors.qualitative.Light24
 
 OSM_KEY_LS = ['amenity', 'railway', 'military', 'man_made', 'shop']
 
-DEFAULT_ATYPE = OSM_KEY_LS[0]
-
-# prepare bijective type<->color mapping
-typ_col_pairs = [
-    (t, annotation_colormap[n % len(annotation_colormap)])
-    for n, t in enumerate(OSM_KEY_LS)
-]
-# types to colors
-color_dict = {}
-# colors to types
-type_dict = {}
-for typ, col in typ_col_pairs:
-    color_dict[typ] = col
-    type_dict[col] = typ
-
-filelist = [
-    "images/town.jpg"
-]
-
-server = app.server
+BBOX_COL = '#FD3216'
+filelist = ["images/town.jpg"]
 
 fig = px.imshow(io.imread(filelist[0]), binary_backend="jpg")
 
 fig.update_layout(
-    newshape_line_color=color_dict[DEFAULT_ATYPE],
+    newshape_line_color=BBOX_COL,
     margin=dict(l=0, r=0, b=0, t=0, pad=4),
     dragmode="drawrect",
 )
-
 
 # Cards
 tab_image_annotation = dbc.Card(
