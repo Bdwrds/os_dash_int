@@ -27,6 +27,14 @@ We make the query using python-overpy: https://github.com/DinoTools/python-overp
 
 Overpass Website version (Overpass Turbo): https://overpass-turbo.eu/
 
+### User Journey
+
+![Login step](images/github_osint_1.gif)
+
+![Select Features](images/github_osint_2.gif)
+
+![Geolocate](images/github_osint_3.gif)
+
 #### Limitations (from Overpass)
 Every service has its limitations, and so does Overpass API:
 
@@ -39,7 +47,7 @@ Source: https://wiki.openstreetmap.org/wiki/Overpass_API#Limitations
 ### Other
 Dash APP structure influenced by: https://www.purfe.com/dash-project-structure-multi-tab-app-with-callbacks-in-different-files/
 
-
+Useful Dash resource: https://dash-bootstrap-components.opensource.faculty.ai/docs/quickstart/
 
 
 
