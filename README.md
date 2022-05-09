@@ -21,7 +21,7 @@ The open question on 'Assisted or semi-automated terrain perspective match' here
 ### Data Source - OverpassAPI
 This app queries the OverpassAPI, utilising OSM data.
 
-Currently, we only query 2 or 3 possible 'features' a user has defined/ indentified. These features are known as 'Nodes' in Overpass. https://wiki.openstreetmap.org/wiki/Node
+Currently, we only query 2 or 3 possible 'features' a user has defined. These features are known as 'Nodes' in Overpass and only a limited number of key-value pairs are provided in this demo app. https://wiki.openstreetmap.org/wiki/Node
 
 We make the query using python-overpy: https://github.com/DinoTools/python-overpy
 
@@ -29,9 +29,19 @@ Overpass Website version (Overpass Turbo): https://overpass-turbo.eu/
 
 ### User Journey
 
+- User Login
+- Upload a new image
+- Locate 2/3 features
+
 ![Login step](images/github_osint_1.gif)
 
+- Restrict the map to the relevant coordinates
+- Query OSM for these features within this space
+
 ![Select Features](images/github_osint_2.gif)
+
+- Limit the distance between the feature combinations
+- Investigate the possible locations
 
 ![Geolocate](images/github_osint_3.gif)
 
